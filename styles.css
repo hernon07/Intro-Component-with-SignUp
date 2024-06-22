@@ -1,0 +1,160 @@
+/*RESET*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/*Body Styles*/
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/bg-intro-desktop.png);
+  background-color: #ff7979;
+  display: grid;
+  place-content: center;
+  padding: 200px;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Text Section Styles*/
+
+.text {
+  align-self: center;
+  width: 50%;
+}
+
+.text > h1 {
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 55px;
+  letter-spacing: -0.5px;
+  color: #fff;
+  padding-bottom: 20px;
+}
+.text > p {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 26px;
+  color: #fff;
+}
+
+/* Form Section Styles*/
+
+.form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.top-text {
+  max-width: 550px;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 26px;
+  color: #fff;
+  letter-spacing: 0.27px;
+  background-color: #5e54a4;
+  text-align: center;
+  border-radius: 10px;
+  padding: 15px 5px;
+}
+.top-text span {
+  font-weight: 400;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  max-width: 550px;
+  height: 480px;
+  border-radius: 10px;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 30px 0;
+}
+
+form > * {
+  width: 80%;
+  height: 56px;
+}
+
+input {
+  border: 0.5px solid #dedede;
+  border-radius: 5px;
+  color: #3d3b48;
+  padding-left: 20px;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0.26px;
+}
+
+input:focus {
+  outline: 0.5px solid #5e54a4;
+}
+
+input::placeholder {
+  font-weight: 600;
+  color: #3d3b4883;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0.26px;
+}
+
+form button {
+  background-color: #38cc8b;
+  border: none;
+  color: #fff;
+  font-size: 15px;
+  line-height: 26px;
+  border-radius: 10px;
+}
+form button:hover {
+  background-color: #77e2b3;
+}
+
+.bottom-text {
+  font-size: 11px;
+  line-height: 26px;
+  color: #a6a1cf;
+  letter-spacing: 0.27px;
+}
+.bottom-text span {
+  font-weight: bold;
+  color: #ff7979;
+}
+
+.warn {
+  font-size: 11px;
+  color: #ff7979;
+  text-align: right;
+}
+
+/*Mobile Styles*/
+
+@media (max-width: 1000px) {
+  body {
+    height: fit-content;
+    padding: 0px;
+  }
+  .section {
+    flex-direction: column;
+  }
+  .text > h1 {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 36px;
+    letter-spacing: -0.5px;
+    color: #fff;
+    padding-bottom: 10px;
+  }
+}
